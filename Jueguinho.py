@@ -32,6 +32,5 @@ while True:
     pygame.draw.aaline(screen,BLACK,[0,0],[400,400],5)
     pygame.draw.rect(screen,BLUE,(200,200,40,80))
     pygame.draw.circle(screen,BLACK,(100,100),50)
-
     pygame.display.flip()
 
