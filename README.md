@@ -1,2 +1,2 @@
 # DajjiProject
-Trabajo final para el curso de programación de videojuegos
+## Trabajo final para el curso de programación de videojuegos
