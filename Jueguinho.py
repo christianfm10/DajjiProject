@@ -1,37 +1,17 @@
-#Rodrigo
-import pygame,sys
+import pygame
 pygame.init()
 
-# Colores
+L = 900
+A = 600
+screen = pygame.display.set_mode((L, A))
+icono = pygame.image.load('images/ic_per.png') # Variable 'icono' cargando imagen
+pygame.display.set_icon(icono) # Icono
+pygame.display.set_caption('Dajji') # Titulo
 
-BLACK = (0,0,0)
-WHITE = (255,255,255)
-RED = (255,0,0)
-GREEN = (0, 255, 255)
-BLUE = (0,0,255)
-
-size = (300, 300)
-
-# crear pantalla
-
-screen = pygame.display.set_mode(size)
-
-cord_x = 200
-cord_y = 200
-
-speed_x = 3
-speed_y = 3
-
-while True:
+correr = True
+while correr:
+    # Cerrar programa
     for event in pygame.event.get():
-        print(event)
         if event.type == pygame.QUIT:
-            sys.exit()
-    # Color 
-    screen.fill(RED)
-    # Actualizar pantalla
-    pygame.draw.aaline(screen,BLACK,[0,0],[400,400],5)
-    pygame.draw.rect(screen,BLUE,(200,200,40,80))
-    pygame.draw.circle(screen,BLACK,(100,100),50)
-    pygame.display.flip()
+            correr = False
 
